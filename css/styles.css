@@ -17,3 +17,18 @@
   height: 100%;
   float: left;
 }
+
+.font-menu-title{
+  font-family: 'Fredoka One', cursive;
+  color: white;
+  font-size: 26px;
+  font-weight: 300px;
+  text-shadow: 1px 1px black;
+}
+
+.font-menu-sub-title{
+  font-family: 'Martel', serif;
+  font-style: italic;
+  color: white;
+  font-size: 14px;
+}
