@@ -94,9 +94,28 @@ main{
     width: 100%;
   }
 }
-
-@media (min-width: 2600px){
+@media (min-width: 2000px){
+  .box{
+    width: 50%;
+  }
+}
+@media (min-width: 2500px){
   .box{
     width: 25%;
+  }
+}
+@media (min-width: 3380px){
+  .box{
+    width: 25%;
+    height: 1200px;
+  }
+  .box-a-middle{
+    font-size: 100px;
+  }
+  .box-a-top{
+    font-size: 40px;
+  }
+  .box-a-bottom{
+    font-size: 40px;
   }
 }
