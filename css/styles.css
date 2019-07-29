@@ -80,6 +80,7 @@ main{
   margin: 0 auto;
   font-family: 'Fredoka One', cursive;
   text-shadow: 1px 1px 0 black;
+  margin-bottom: 20px;
 }
 
 .my-a:hover{
@@ -89,9 +90,10 @@ main{
 }
 .my-a-extra{
   color: white;
+  position: relative;
 }
 .my-a-extra-margin{
-  margin-left: 20px;
+  margin-left: 50px;
 }
 .my-a-extra:hover{
   text-decoration: none;
@@ -148,6 +150,20 @@ main{
 .img-user:hover{
   transform: rotate(0);
   transition-duration: 0.4s;
+}
+.wrote{
+  font-weight: 100;
+  font-family: 'Lato', sans-serif;
+}
+.numeral{
+  color: black;
+    font-family: 'Lato', sans-serif;
+}
+.exponencial{
+  position: absolute;
+  font-size: 13px;
+  top: 0;
+  right: -22px;
 }
 @media (max-width: 800px){
   .box{
