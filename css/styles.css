@@ -49,10 +49,9 @@ main{
 .sub-box{
   display: table-cell;
   vertical-align: middle;
-
 }
 .my-a{
-  width: 80%;
+  width: 81%;
   text-align: left;
   color: white;
   font-weight: 400;
