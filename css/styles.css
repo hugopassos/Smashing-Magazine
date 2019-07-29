@@ -10,7 +10,6 @@ main{
 
 #circle-container{
   position: absolute;
-  top: 35px;
   right: 220px;
   z-index: 1;
   background: white;
@@ -26,8 +25,8 @@ main{
 }
 #button-red{
   position: absolute;
-  top: 40px;
   right: 35px;
+  top: 9px;
   z-index: 1;
   padding: 10px;
   background: none;
@@ -41,13 +40,12 @@ main{
 #container-title{
   width:365px;
   position: absolute;
-  top: 40px;
   z-index: 1;
   left: 0;
   right: 0;
   margin: auto;
   text-align: center;
-
+  top: 40px;
 }
 #articles-title{
   display: inline;
@@ -60,13 +58,14 @@ main{
 .circle-square-container{
   position: absolute;
   width: 300px;
+  top: 40px;
   margin: 0;
   padding: 0;
-  height: 90px;
+  height: 55px;
   right: 0;
   z-index: 6;
 }
-.circle-square-container:hover >#circle-container > #img-circle{
+.circle-square-container:hover > #circle-container > #img-circle{
     transform: rotate(0deg);
     transition-duration: 0.3s;
 }
