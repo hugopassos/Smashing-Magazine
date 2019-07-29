@@ -3,7 +3,19 @@
 main{
   width: 100%;
 }
+#articles-title{
+  display: inline-block;
+  position: absolute;
+  background: white;
+  top: 0;
+  z-index: 10;
+  font-size: 30px;
+  width: 365px;
 
+  padding: 10px;
+  font-weight: bold;
+
+}
 .header-head{
   width: 100%;
   height: 220px;
@@ -63,14 +75,12 @@ main{
 
 .box{
   width: 50%;
-  height: 600px;
+  height: 100%;
   float: left;
-  display: table;
+  position: relative;
 }
-
 .sub-box{
-  display: table-cell;
-  vertical-align: middle;
+  margin: 20% 0;
 }
 .my-a{
   width: 81%;
@@ -80,7 +90,8 @@ main{
   margin: 0 auto;
   font-family: 'Fredoka One', cursive;
   text-shadow: 1px 1px 0 black;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+
 }
 
 .my-a:hover{
@@ -102,7 +113,16 @@ main{
 
 .box-a-middle{
   font-size: 50px;
-  display: block;
+  color: white;
+}
+.comment{
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.box-a-middle:hover{
+  color: white;
+  text-decoration: none;
 }
 .box-a-top{
   font-size: 20px;
@@ -165,7 +185,23 @@ main{
   top: 0;
   right: -22px;
 }
-@media (max-width: 800px){
+.articles{
+  width: 100%;
+  height: 800px;
+  position: relative;
+  background: black;
+}
+.my-row{
+  font-size: 60px;
+  color: white;
+  position: absolute;
+  top: 85%;
+  left: 9%;
+}
+@media (max-width: 1000px){
+  .articles{
+    height: 600px;
+  }
   .box{
     width: 100%;
   }
@@ -178,15 +214,17 @@ main{
   .box-a-bottom{
     font-size: 15px;
   }
-}
-@media (min-width: 2000px){
-  .box{
-    width: 50%;
+  .comment{
+    font-size: 15px;
   }
 }
-@media (min-width: 2500px){
+
+@media (min-width: 3300px){
   .box{
     width: 25%;
+  }
+  .my-row{
+    top:92%;
   }
 }
 @media (min-width: 3380px){
@@ -196,6 +234,9 @@ main{
   }
   .box-a-middle{
     font-size: 100px;
+  }
+  .comment{
+    font-size: 40px;
   }
   .box-a-top{
     font-size: 40px;
