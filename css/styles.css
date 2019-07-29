@@ -16,9 +16,14 @@ main{
   margin-top: 1%;
 }
 
+.logo-small{
+  display: none;
+  width: 70px;
+}
+
 .nav-menu{
   display: flex;
-  flex-basis: 65%;
+  flex: 1;
   justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -80,6 +85,7 @@ main{
 .div-nav-btn{
   flex-basis: 17.5%;
   text-align: center;
+  margin-left: auto;
 }
 
 .nav-button{
@@ -91,6 +97,10 @@ main{
   border: solid 3px white;
   border-radius: 7px;
   font-size: 20px;
+}
+
+.nav-button span{
+  text-shadow: 1px 1px 1px #454545;
 }
 
 .box{
@@ -148,30 +158,6 @@ main{
   background: #bd332a;
 }
 
-@media (max-width: 800px){
-  .box{
-    width: 100%;
-  }
-  .box-a-middle{
-    font-size: 30px;
-  }
-  .box-a-top{
-    font-size: 15px;
-  }
-  .box-a-bottom{
-    font-size: 15px;
-  }
-}
-@media (min-width: 2000px){
-  .box{
-    width: 50%;
-  }
-}
-@media (min-width: 2500px){
-  .box{
-    width: 25%;
-  }
-}
 @media (min-width: 3380px){
   .box{
     width: 25%;
@@ -185,5 +171,47 @@ main{
   }
   .box-a-bottom{
     font-size: 40px;
+  }
+}
+
+@media (min-width: 2500px){
+  .box{
+    width: 25%;
+  }
+}
+
+@media (min-width: 2000px){
+  .box{
+    width: 50%;
+  }
+}
+
+@media(max-width: 1340px){
+  .logo{
+    flex-basis: 8%;
+  }
+  .logo-full{
+    display: none;
+  }
+  .logo-small{
+    display: inline;
+  }
+  .div-nav-btn{
+
+  }
+}
+
+@media (max-width: 800px){
+  .box{
+    width: 100%;
+  }
+  .box-a-middle{
+    font-size: 30px;
+  }
+  .box-a-top{
+    font-size: 15px;
+  }
+  .box-a-bottom{
+    font-size: 15px;
   }
 }
