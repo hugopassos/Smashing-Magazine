@@ -3,18 +3,81 @@
 main{
   width: 100%;
 }
-#articles-title{
-  display: inline-block;
-  position: absolute;
-  background: white;
-  top: 0;
-  z-index: 10;
-  font-size: 30px;
-  width: 365px;
+#img-circle{
+  transform: rotate(180deg);
+  transition-duration: 0.3s;
+}
 
+#circle-container{
+  position: absolute;
+  top: 35px;
+  right: 220px;
+  z-index: 1;
+  background: white;
+  padding: 8px;
+  border-radius: 5px;
+  transform: rotate(-15deg);
+  transition-duration: 0.3s;
+  transform-origin: left bottom;
+}
+#circle-container:hover{
+  transform: rotate(0deg);
+  transition-duration: 0.3s;
+}
+#button-red{
+  position: absolute;
+  top: 40px;
+  right: 35px;
+  z-index: 1;
+  padding: 10px;
+  background: none;
+  border: 1px solid white;
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#container-title{
+  width:365px;
+  position: absolute;
+  top: 40px;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+
+}
+#articles-title{
+  display: inline;
+  line-height: 1.4em;
+  background: white;
+  font-size: 30px;
   padding: 10px;
   font-weight: bold;
+}
+.circle-square-container{
+  position: absolute;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  height: 90px;
+  right: 0;
+  z-index: 6;
+}
+.circle-square-container:hover >#circle-container > #img-circle{
+    transform: rotate(0deg);
+    transition-duration: 0.3s;
+}
+.circle-square-container:hover > #button-red{
+  background: white;
+  color: #ad3028;
+}
 
+.trick{
+  color: white;
+  opacity: 0;
 }
 .header-head{
   width: 100%;
@@ -80,7 +143,7 @@ main{
   position: relative;
 }
 .sub-box{
-  margin: 20% 0;
+  margin: 100px 0;
 }
 .my-a{
   width: 81%;
@@ -114,6 +177,7 @@ main{
 .box-a-middle{
   font-size: 50px;
   color: white;
+  line-height: 1.3em;
 }
 .comment{
   font-size: 20px;
@@ -191,6 +255,9 @@ main{
   position: relative;
   background: black;
 }
+.article-padding-top{
+  padding-top: 150px;
+}
 .my-row{
   font-size: 60px;
   color: white;
@@ -198,39 +265,11 @@ main{
   top: 85%;
   left: 9%;
 }
-@media (max-width: 1000px){
-  .articles{
-    height: 600px;
-  }
-  .box{
-    width: 100%;
-  }
-  .box-a-middle{
-    font-size: 35px;
-  }
-  .box-a-top{
-    font-size: 15px;
-  }
-  .box-a-bottom{
-    font-size: 15px;
-  }
-  .comment{
-    font-size: 15px;
-  }
-}
 
-@media (min-width: 3300px){
-  .box{
-    width: 25%;
-  }
-  .my-row{
-    top:92%;
-  }
-}
 @media (min-width: 3380px){
   .box{
     width: 25%;
-    height: 1200px;
+    height: 1400px;
   }
   .box-a-middle{
     font-size: 100px;
@@ -243,5 +282,68 @@ main{
   }
   .box-a-bottom{
     font-size: 40px;
+  }
+
+}
+@media (min-width: 3300px){
+  .box{
+    width: 25%;
+  }
+  .articles-padding-others{
+    padding-top:150px;
+  }
+  .my-row{
+    top:92%;
+  }
+  .articles{
+    height: 1000px;
+  }
+}
+@media (max-width: 1400px){
+  .articles{
+    height: 900px;
+  }
+}
+@media (max-width: 1200px){
+  .my-row{
+    top: 90%;
+  }
+}
+
+@media (max-width: 1000px){
+  #circle-container{
+    display: none;
+  }
+  .articles{
+    height: 600px;
+  }
+  .article-padding-top{
+    padding-top: 100px;
+  }
+  .second-article-padding-top{
+    padding-top: 0;
+  }
+  .box{
+    width: 100%;
+  }
+  .box-a-middle{
+    font-size: 30px;
+  }
+  .box-a-top{
+    font-size: 15px;
+  }
+  .box-a-bottom{
+    font-size: 15px;
+  }
+  .comment{
+    font-size: 15px;
+  }
+  .my-row{
+    top: 89%;
+  }
+}
+@media (max-width: 800px){
+  #button-red{
+    display: none;
   }
 }
