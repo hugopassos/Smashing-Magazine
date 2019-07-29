@@ -92,6 +92,15 @@ main{
   .box{
     width: 100%;
   }
+  .box-a-middle{
+    font-size: 30px;
+  }
+  .box-a-top{
+    font-size: 15px;
+  }
+  .box-a-bottom{
+    font-size: 15px;
+  }
 }
 @media (min-width: 2000px){
   .box{
