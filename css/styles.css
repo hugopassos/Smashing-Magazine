@@ -1,5 +1,3 @@
-
-
 main{
   width: 100%;
 }
@@ -80,32 +78,90 @@ main{
 }
 .header-head{
   width: 100%;
-  height: 220px;
   background: #d13126;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .logo{
   text-align: center;
-  width: 22%;
-  background: blue;
+  flex-basis: 16%;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+.logo-small{
+  display: none;
+  width: 60px;
+  margin-top: 4%;
 }
 
 .nav-menu{
   display: flex;
-  background: yellow;
-  flex-basis: 65%;
+  flex: 1;
+  justify-content: space-between;
+  padding: 2%;
 }
 
 .header-element{
   text-align: center;
-  background: green;
+}
+
+.a-menu{
+  display: block;
+  padding: 2px;
+  color: white;
+  text-shadow: 1px 1px 1px #454545;
+}
+
+.a-menu:hover{
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s ease-in-out;
+  text-shadow: none;
+}
+
+.a-menu:hover .nav-img{
+  transform: none;
+  transition: transform .2s ease-out;
+}
+
+.a-menu:active, .a-menu:focus{
+  border: dotted 4px rgba(0, 0, 0, .4);
+  text-decoration: none;
+  text-shadow: none;
+  color: black;
+  margin: -4px;
+}
+
+.nav-img{
+  width: 32px;
+  margin-bottom: 16px;
+  transform: rotate(-11deg);
+  transition: transform .2s ease-out;
+  transform-origin: 0 100%;
+  text-shadow: 3px 0 #fff, 2px 0 #fff, 1px 0 #fff, -1px 0 #fff, -2px 0 #fff, -3px 0 #fff;
+}
+
+.font-menu-title{
+  font-family: 'Fredoka One', cursive;
+  font-size: 2vw;
+  font-weight: 100;
+}
+
+.font-menu-sub-title{
+  font-family: 'Martel', serif;
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 14px;
+  text-shadow: none;
 }
 
 .div-nav-btn{
-  width: 200px;
+  flex-basis: 15%;
+  text-align: center;
+  margin-left: auto;
+  padding-right: 2%;
 }
 
 .nav-button{
@@ -119,20 +175,8 @@ main{
   font-size: 20px;
 }
 
-.font-menu-title{
-  font-family: 'Fredoka One', cursive;
-  color: white;
-  font-size: 26px;
-  font-weight: 100;
+.nav-button span{
   text-shadow: 1px 1px 1px #454545;
-  margin-top:
-}
-
-.font-menu-sub-title{
-  font-family: 'Martel', serif;
-  font-style: italic;
-  color: white;
-  font-size: 14px;
 }
 
 .box{
@@ -265,6 +309,8 @@ main{
   left: 9%;
 }
 
+
+
 @media (min-width: 3380px){
   .box{
     width: 25%;
@@ -303,12 +349,30 @@ main{
     height: 900px;
   }
 }
+@media(max-width: 1340px){
+  .logo{
+    flex-basis: 8%;
+  }
+  .logo-full{
+    display: none;
+  }
+  .logo-small{
+    display: inline;
+  }
+}
 @media (max-width: 1200px){
   .my-row{
     top: 90%;
   }
 }
-
+@media(max-width: 1100px){
+  .font-menu-sub-title{
+    display: none;
+  }
+  .logo-small{
+    margin-top: 20%;
+  }
+}
 @media (max-width: 1000px){
   #circle-container{
     display: none;
@@ -339,6 +403,11 @@ main{
   }
   .my-row{
     top: 89%;
+  }
+}
+@media(max-width: 917px){
+  .nav-menu{
+    display: none;
   }
 }
 @media (max-width: 800px){
