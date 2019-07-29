@@ -11,22 +11,22 @@ main{
 
 .logo{
   text-align: center;
-  flex-basis: 20%;
+  flex-basis: 16%;
   margin-left: 2%;
   margin-top: 1%;
 }
 
 .logo-small{
   display: none;
-  width: 70px;
+  width: 60px;
+  margin-top: 4%;
 }
 
 .nav-menu{
   display: flex;
   flex: 1;
   justify-content: space-between;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding: 2%;
 }
 
 .header-element{
@@ -66,6 +66,7 @@ main{
   transform: rotate(-11deg);
   transition: transform .2s ease-out;
   transform-origin: 0 100%;
+  text-shadow: 3px 0 #fff, 2px 0 #fff, 1px 0 #fff, -1px 0 #fff, -2px 0 #fff, -3px 0 #fff;
 }
 
 .font-menu-title{
@@ -83,9 +84,10 @@ main{
 }
 
 .div-nav-btn{
-  flex-basis: 17.5%;
+  flex-basis: 15%;
   text-align: center;
   margin-left: auto;
+  padding-right: 2%;
 }
 
 .nav-button{
@@ -196,8 +198,20 @@ main{
   .logo-small{
     display: inline;
   }
-  .div-nav-btn{
+}
 
+@media(max-width: 1100px){
+  .font-menu-sub-title{
+    display: none;
+  }
+  .logo-small{
+    margin-top: 20%;
+  }
+}
+
+@media(max-width: 917px){
+  .nav-menu{
+    display: none;
   }
 }
 
