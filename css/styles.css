@@ -74,7 +74,7 @@ main{
 }
 .my-a{
   width: 81%;
-  text-align: left;
+  display: table;
   color: white;
   font-weight: 400;
   margin: 0 auto;
@@ -85,6 +85,7 @@ main{
 .my-a:hover{
   text-decoration: none;
   color: white;
+
 }
 .my-a-extra{
   color: white;
@@ -103,7 +104,16 @@ main{
 }
 .box-a-top{
   font-size: 20px;
-  display: block;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+.box-a-top:hover{
+  color: white;
+  text-decoration: none;
 }
 .box-a-bottom{
   font-size: 20px;
@@ -125,7 +135,20 @@ main{
 .back4{
   background: #bd332a;
 }
-
+.img-user{
+  border: 5px solid white;
+  border-radius: 5px;
+  width: 80px;
+  transform: rotate(-15deg);
+  transition-duration: 0.4s;
+  transform-origin: bottom left;
+  box-shadow: 0px 15px 25px black;
+  object-fit: cover;
+}
+.img-user:hover{
+  transform: rotate(0);
+  transition-duration: 0.4s;
+}
 @media (max-width: 800px){
   .box{
     width: 100%;
