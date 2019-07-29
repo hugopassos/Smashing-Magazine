@@ -140,7 +140,7 @@ main{
   border-radius: 5px;
   width: 80px;
   transform: rotate(-15deg);
-  transition-duration: 0.4s;
+  transition-duration: 0.5s;
   transform-origin: bottom left;
   box-shadow: 0px 15px 25px black;
   object-fit: cover;
