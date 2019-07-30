@@ -179,6 +179,10 @@ main{
   text-shadow: 1px 1px 1px #454545;
 }
 
+.btn-menu{
+  display: none;
+}
+
 .box{
   width: 50%;
   height: 100%;
@@ -344,6 +348,26 @@ main{
     height: 1000px;
   }
 }
+
+@media(min-width: 1800px){
+  .nav-button{
+    height: 5.76vh;
+    width: 15vh;
+  }
+  .font-button{
+    font-size: 2vh;
+  }
+}
+
+@media(min-width: 1400px){
+  .nav-img{
+    width: 4vh;
+  }
+  .font-menu-title{
+    font-size: 4vh;
+  }
+}
+
 @media (max-width: 1400px){
   .articles{
     height: 900px;
@@ -408,6 +432,12 @@ main{
 @media(max-width: 917px){
   .nav-menu{
     display: none;
+  }
+  .btn-topics{
+    display: none;
+  }
+  .btn-menu{
+    display: inline;
   }
 }
 @media (max-width: 800px){
