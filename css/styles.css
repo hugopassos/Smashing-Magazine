@@ -1,6 +1,27 @@
 main{
   width: 100%;
 }
+
+li{
+  font-size: 20px;
+  color: white;
+  list-style-type: square;
+  margin-left: 5%;
+  max-width: 30em;
+  margin-bottom: 10px;
+}
+#button-blue-square{
+  margin-top: 20px;
+  max-width: 15em;
+  padding: 20px;
+  border-radius: 7px;
+  background: linear-gradient(to bottom, #a3ff57 30%,#355917);
+  border: none;
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  font-size: 25px;
+  text-shadow: 1px 0 1px black;
+}
 #img-circle{
   transform: rotate(180deg);
   transition-duration: 0.3s;
@@ -53,6 +74,7 @@ main{
   padding: 10px;
   font-weight: bold;
 }
+
 .circle-square-container{
   position: absolute;
   width: 300px;
@@ -307,17 +329,37 @@ main{
   left: 10%;
   top: 90%;
   text-decoration: none;
-
 }
 .blue-square{
-  width: 100%;
-  height: 10px;
-  background: blue;
+  background: linear-gradient(to bottom, #071d40 10%, #012f78);
+  display: flex;
+  flex-direction: row;
+  line-height: 2em;
 }
 .blue-p{
-  margin-top: 50px;
+  color: white;
+  font-size: 20px;
+  max-width: 35em;
+  margin-bottom: 20px;
 }
-
+.blue-square-img{
+  transform-origin: bottom left;
+  transform: rotate(-15deg);
+  transition-duration: 0.5s;
+  margin-top: -40px;
+}
+.blue-square-img:hover{
+  transform: rotate(0deg);
+  transition-duration: 0.5s;
+}
+.flex1{
+  flex: 1 1 auto;
+  padding:60px;
+  text-align: right;
+}
+.flex2{
+  flex: 1 1 auto;
+}
 @media (min-width: 3380px){
   .articles{
     grid-template-columns: 25% 25% 25% 25%;
@@ -367,6 +409,7 @@ main{
   }
 }
 @media (max-width: 1000px){
+
   #circle-container{
     display: none;
   }
@@ -401,6 +444,14 @@ main{
   }
 }
 @media (max-width: 800px){
+  .blue-square{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .blue-square-img{
+    margin-top: 50px;
+    width: 140px;
+  }
   #button-red{
     display: none;
   }
