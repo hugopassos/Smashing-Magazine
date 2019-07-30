@@ -394,9 +394,6 @@ li{
   .my-row{
     top:92%;
   }
-  .articles{
-    height: 1000px;
-  }
 }
 
 @media(min-width: 1800px){
@@ -418,11 +415,6 @@ li{
   }
 }
 
-@media (max-width: 1400px){
-  .articles{
-    height: 900px;
-  }
-}
 @media(max-width: 1340px){
   .logo{
     flex-basis: 8%;
