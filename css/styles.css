@@ -184,6 +184,7 @@ main{
   height: 100%;
   float: left;
   position: relative;
+  cursor: pointer;
 }
 .sub-box{
   margin: 100px 0;
