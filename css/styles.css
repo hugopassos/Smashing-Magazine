@@ -209,9 +209,11 @@ li{
   position: relative;
   cursor: pointer;
 }
+
 .sub-box{
   margin: 100px 0;
 }
+
 .my-a{
   width: 81%;
   display: table;
@@ -368,13 +370,67 @@ li{
 .wrapper{
   max-width: 2050px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(364.5px, 1fr));
   margin: 0 auto;
 }
 
-.article-grid{
-  background: yellow;
+.grid-article-article{
+  min-width: 364.5px;
+  background: #f5f2f2;
+  margin-top: 20px;
+  padding: 20px 30px;
+}
 
+.grid-article-article:hover .grid-article-title a{
+  color: #cf3c3c;
+}
+
+.grid-article-title{
+  margin: 10px 0;
+  font-family: 'Fredoka One', cursive;
+  font-size: 26px;
+  text-decoration: underline;
+}
+
+.grid-article-title a{
+  color: black;
+}
+
+.by-author{
+  display: inline-block;
+  margin: 10px 0;
+  font-family: 'Fredoka One', cursive;
+  color: grey;
+}
+.by-author a{
+  color: grey;
+  text-decoration: underline;
+}
+
+.by-author:hover a{
+  color: grey;
+}
+
+.grid-article-p{
+  margin-top: 10px;
+  line-height: 24px;
+}
+
+.grid-article-a-free{
+  color: #4287f5;
+  text-decoration: underline;
+}
+
+.grid-article-a-free:hover{
+  color: #4287f5;
+}
+
+.grid-image{
+  grid-column: span 2;
+}
+
+.grid-image-cat{
+  width: 200px;
 }
 
 @media (min-width: 3380px){
@@ -440,14 +496,18 @@ li{
   }
 }
 
-@media(max-width: 1100px){
+@media(max-width: 1110px){
   .font-menu-sub-title{
     display: none;
   }
   .logo-small{
     margin-top: 20%;
   }
+  .grid-image{
+    grid-column: span 1;
+  }
 }
+
 @media (max-width: 1000px){
 
   #circle-container{
@@ -477,6 +537,9 @@ li{
   .my-row{
     top:85%;
   }
+  .grid-image{
+    grid-column: span 2;
+  }
 }
 @media(max-width: 917px){
   .nav-menu{
@@ -500,5 +563,11 @@ li{
   }
   #button-red{
     display: none;
+  }
+}
+
+@media(max-width: 729px){
+  .grid-image{
+    grid-column: span 1;
   }
 }
