@@ -497,21 +497,39 @@ footer{
   margin: 0 auto;
 }
 
+.grid-article{
+  background: #f5f2f2;
+}
+
 .grid-article-article{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
   min-width: 364.5px;
   background: #f5f2f2;
   margin-top: 20px;
-  padding: 20px 30px;
+  padding: 20px 0;
+  padding-bottom: 0;
+  cursor: pointer;
 }
 
 .grid-article-article:hover .grid-article-title a{
   color: #cf3c3c;
 }
 
+.grid-article-article:hover .grid-article-arrow{
+  background-color: blue;
+}
+
+.grid-article-time{
+  margin-left: 30px;
+}
+
 .grid-article-title{
-  margin: 10px 0;
+  margin: 10px 30px;
   font-family: 'Fredoka One', cursive;
-  font-size: 26px;
+  font-size: calc(2em + .2vw);
   text-decoration: underline;
 }
 
@@ -521,9 +539,11 @@ footer{
 
 .by-author{
   display: inline-block;
-  margin: 10px 0;
+  margin-top: 20px;
+  margin-left: 30px;
   font-family: 'Fredoka One', cursive;
   color: grey;
+  font-size: calc(1.2em + .1vw);
 }
 .by-author a{
   color: grey;
@@ -531,12 +551,14 @@ footer{
 }
 
 .by-author:hover a{
-  color: grey;
+  color: black;
 }
 
 .grid-article-p{
-  margin-top: 10px;
-  line-height: 24px;
+  margin: 20px 30px;
+  font-size: calc(1.2em + .4vw);
+  line-height: calc(1.3em + .5vw);
+  font-family: Elena;
 }
 
 .grid-article-a-free{
@@ -546,6 +568,19 @@ footer{
 
 .grid-article-a-free:hover{
   color: #4287f5;
+}
+
+.grid-article-arrow{
+  font-size: 30px;
+  width: 120px;
+  height: 120px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.grid-article-arrow a{
+  display: inline-block;
+  margin-top: 45px;
 }
 
 .grid-image{
