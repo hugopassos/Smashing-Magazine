@@ -8,7 +8,20 @@ footer{
   text-align: center;
   position: relative;
 }
-
+#button-red-block{
+  margin-top: 20px;
+  max-width: 15em;
+  padding: 20px;
+  border-radius: 7px;
+  background: white;
+  border: none;
+  font-family: 'Fredoka One', cursive;
+  color: #4287f5;
+  font-size: 25px;
+}
+#button-red-block:hover{
+  color: #d33a2c;
+}
 #button-blue-square{
   margin-top: 20px;
   max-width: 15em;
@@ -72,6 +85,23 @@ footer{
   font-size: 30px;
   padding: 10px;
   font-weight: bold;
+}
+.span-red-block{
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 0 1px black;
+}
+.h2-red-block{
+  font-size: 45px;
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  text-decoration: underline;
+  text-decoration-color: #9d9d9e;
+  margin-bottom: 40px;
+}
+.h2-red-block:hover{
+  color: white;
 }
 .img-ate-footer{
   display: none;
@@ -423,6 +453,9 @@ footer{
   max-width: 35em;
   margin-bottom: 20px;
 }
+.red-block-p{
+  max-width: 45em;
+}
 .blue-square-img{
   transform-origin: bottom left;
   transform: rotate(-15deg);
@@ -509,6 +542,9 @@ footer{
 }
 .img-cat-footer{
   display: none;
+}
+.red-block{
+  background: #d33a2c;
 }
 
 @media (min-width: 3380px){
