@@ -360,12 +360,15 @@
         <img class="img-red-image-square" src="https://d33wubrfki0l68.cloudfront.net/ce7741e1659c0366fda51555365194e0bfd136c0/ae578/images/smashing-cat/cat-with-trampet.svg">
         <form role="form">
           <div class="div-form-red-square">
-            <label for="email">
-              <input type="email" id="email">
+            <label class="label-red-img-square" for="email">
+              <input class="input-red-img-square" type="email" id="email" onfocus="fix()" onblur="reversed()" required>
+              <span class="span-red-img-square" id="span">Your (smashing) email</span>
             </label>
             <button class="button-red-img-square" type="button" name="button">Subscribe →</button>
           </div>
         </form>
+        <p class="p-bottom-red-img-square">Useful tips for web designers. Sent 2× a month.
+            You can unsubscribe any time — obviously.</p>
       </div>
       <div class="division-span">
         <a class="divison-a" href="https://www.smashingmagazine.com/articles/page/2/">SEE ALL ARTICLES → </a>
@@ -427,5 +430,21 @@
       <img class="img-cat-footer" src="img/cat.png">
       <img class="img-ate-footer" src="img/ate.png">
     </footer>
+    <script type="text/javascript">
+      let span = document.getElementById("span");
+
+      function reversed(){
+        span.style.fontSize = '16px';
+        span.style.top = '40%';
+        span.style.color = '#4d4c4c';
+        span.style.transitionDuration = '0.5s';
+      }
+      function fix(){
+        span.style.fontSize = '12px';
+        span.style.top = '10px';
+        span.style.color = '#c7c7c7';
+        span.style.transitionDuration = '0.5s';
+      }
+    </script>
   </body>
 </html>

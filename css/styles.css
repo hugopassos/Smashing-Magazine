@@ -632,6 +632,7 @@ footer{
 }
 .img-red-image-square{
   max-width: 500px;
+  margin-bottom: 40px;
 }
 .p-red-img-square{
   margin: 0 auto;
@@ -640,20 +641,45 @@ footer{
 .div-form-red-square{
   background: white;
   display: inline-block;
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 12px;
+  position: relative;
 }
 .button-red-img-square{
   border: none;
   background: none;
+  padding: 20px;
   outline: none;
   color: #4287f5;
   font-size: 22px;
   font-family: 'Fredoka One', cursive;
+  border-left: 0.6px solid #c4c4c4;
 }
 .button-red-img-square:hover{
   color:#d33a2c;
 }
+.input-red-img-square{
+    border: none;
+    outline: none;
+    padding: 20px;
+    background: none;
+}
+.span-red-img-square{
+  position: absolute;
+  color: #4d4c4c;
+  font-size: 16px;
+  top:40%;
+  left: 4%;
+  cursor:pointer;
+}
+.p-bottom-red-img-square{
+  margin: 0 auto;
+  margin-top: 20px;
+  color: white;
+  font-size: 16px;
+  max-width: 400px;
+
+}
+
 @media (min-width: 3380px){
   .articles{
     grid-template-columns: 25% 25% 25% 25%;
@@ -864,5 +890,18 @@ footer{
 @media(max-width: 645px){
   .ul-footer{
     grid-template-columns: 50% 50%;
+  }
+  .button-red-img-square{
+    background: #d33a2c;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    border-left: none;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    margin-right: 3px;
+  }
+  .button-red-img-square:hover{
+    background: white;
   }
 }
