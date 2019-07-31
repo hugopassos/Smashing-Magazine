@@ -606,12 +606,15 @@ footer{
   background: white;
   display: inline-block;
   border-radius: 5px;
+  padding: 5px;
 }
 .button-red-img-square{
   border: none;
   background: none;
   outline: none;
   color: #4287f5;
+  font-size: 22px;
+  font-family: 'Fredoka One', cursive;
 }
 .button-red-img-square:hover{
   color:#d33a2c;
