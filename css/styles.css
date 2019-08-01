@@ -499,6 +499,8 @@ footer{
 
 .grid-article{
   background: #f5f2f2;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .grid-article-article{
@@ -512,6 +514,16 @@ footer{
   padding: 20px 0;
   padding-bottom: 0;
   cursor: pointer;
+  margin-right: -2%;
+  margin-left: -2%;
+  transition: All .5s ease-in-out;
+}
+
+.grid-article-article:hover{
+  margin-right: -4%;
+  margin-left: -4%;
+  z-index: 999;
+  background: green;
 }
 
 .grid-article-article:hover .grid-article-title a{
@@ -519,11 +531,14 @@ footer{
 }
 
 .grid-article-article:hover .grid-article-arrow{
-  background-color: blue;
+  background-color: #274df5;
+  color: white;
 }
 
 .grid-article-time{
   margin-left: 30px;
+  color: grey;
+  font-family: Elena;
 }
 
 .grid-article-title{
@@ -571,16 +586,18 @@ footer{
 }
 
 .grid-article-arrow{
+  color: #d13126;
+  display: block;
   font-size: 30px;
   width: 120px;
   height: 120px;
   margin-top: 60px;
   text-align: center;
+  padding-top: 45px;
 }
 
-.grid-article-arrow a{
-  display: inline-block;
-  margin-top: 45px;
+.grid-article-arrow:hover{
+  text-decoration: none;
 }
 
 .grid-image-wrapper{
