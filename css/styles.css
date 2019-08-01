@@ -487,9 +487,7 @@ footer{
   position: relative;
   display: inline-block;
 }
-.red-block-img{
-  margin: 0 auto;
-}
+
 .red-block-img-shadow{
   position: absolute;
   height: 100px;
@@ -981,7 +979,6 @@ footer{
   }
   .button-red-img-square{
     padding: 15px;
-    background: blue;
     font-size: 10px;
     margin-right: 5px;
   }
