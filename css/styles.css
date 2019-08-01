@@ -975,7 +975,7 @@ footer{
   }
 
 }
-@media(max-width: 400px){
+@media(max-width: 500px){
   .divison-a{
     font-size: 8px;
   }
