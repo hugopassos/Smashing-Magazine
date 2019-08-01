@@ -973,7 +973,18 @@ footer{
       padding: 20px;
       padding-right: 0;
   }
+
+}
+@media(max-width: 400px){
   .divison-a{
+    font-size: 8px;
+  }
+  .button-red-img-square{
+    padding: 15px;
     font-size: 10px;
+    margin-right: 5px;
+  }
+  .span-red-img-square{
+    font-size: 10px;s
   }
 }
