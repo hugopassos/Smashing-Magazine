@@ -595,12 +595,12 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 25px;
-  margin-right: -15px;
+  margin-left: 3%;
+  margin-right: -2%;
   border-radius: 12px;
   background: #d13126;
   text-align: center;
-  padding: 20px 100px;
+  padding: 20px 100px 40px 100px;
 }
 
 .grid-image-cat{
@@ -608,7 +608,7 @@ footer{
   width: 250px;
 }
 
-.grid-image-text p{
+.grid-image-text{
   color: white;
   font-family: Elena;
   font-size: calc(1.2em + .4vw);
@@ -622,6 +622,34 @@ footer{
   color: white;
   text-decoration: underline;
   text-decoration-color: rgba(255,255,255, .5);
+}
+
+.grid-image-p{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.grid-image-p a{
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: rgba(255,255,255, .5);
+}
+
+.grid-image-sign-in{
+  margin-top: 15px;
+  font-size: calc(.7em + .2vw);
+}
+
+.grid-image-sign-in a{
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: rgba(255,255,255, .5);
+}
+
+.btn-red-block-article{
+  font-size: 20px;
+  height: 50px;
+  padding: 5px 5%;
 }
 
 .img-cat-footer{
@@ -804,7 +832,9 @@ footer{
   .grid-image-wrapper{
     grid-column: span 1;
   }
-
+  .grid-image{
+    margin-right: 5%;
+  }
 }
 @media (max-width: 1025px){
   .img-cat-footer{
@@ -840,8 +870,8 @@ footer{
     font-size: 4vmin;
   }
 }
-@media (max-width: 1000px){
 
+@media (max-width: 1000px){
   #circle-container{
     display: none;
   }
@@ -872,7 +902,12 @@ footer{
   .grid-image-wrapper{
     grid-column: span 2;
   }
-
+  .grid-image{
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 @media(max-width: 917px){
   .nav-menu{
@@ -896,6 +931,10 @@ footer{
   }
   #button-red{
     display: none;
+  }
+  .grid-image{
+    margin-left: 2%;
+    margin-right: 2%;
   }
   .img-ate-footer{
     position: static;
@@ -941,5 +980,9 @@ footer{
   .input-red-img-square{
       padding: 20px;
       padding-right: 0;
+  }
+  .grid-image{
+    margin-left: 1%;
+    margin-right: 1%;
   }
 }
