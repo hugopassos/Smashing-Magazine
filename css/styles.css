@@ -712,7 +712,6 @@ footer{
   color: white;
   font-size: 16px;
   max-width: 400px;
-
 }
 
 @media (min-width: 3380px){
@@ -934,9 +933,13 @@ footer{
     border-left: none;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
-    margin-right: 3px;
+    margin-right: 5px;
   }
   .button-red-img-square:hover{
     background: white;
+  }
+  .input-red-img-square{
+      padding: 20px;
+      padding-right: 0;
   }
 }
