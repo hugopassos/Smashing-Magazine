@@ -538,14 +538,14 @@ footer{
   cursor: pointer;
   margin-right: -2%;
   margin-left: -2%;
-  transition: All .5s ease-in-out;
+  transform-origin: center;
 }
 
 .grid-article-article:hover{
-  margin-right: -4%;
-  margin-left: -4%;
+  transition-duration: 0.5s;
+  transform: scale(1.04);
   z-index: 999;
-  background: green;
+  box-shadow: 1px 1px 12px grey;
 }
 
 .grid-article-article:hover .grid-article-title a{
