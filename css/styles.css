@@ -638,7 +638,7 @@ footer{
   flex-direction: column;
   justify-content: center;
   margin-left: 3%;
-  margin-right: -2%;
+  margin-right: -1%;
   border-radius: 12px;
   background: #d13126;
   text-align: center;
@@ -657,10 +657,11 @@ footer{
   line-height: calc(1.3em + .5vw);
 }
 
-.grid-image-text-h1 a{
+.grid-image-text-h2 a{
   margin: 20px 0;
   display: inline-block;
   font-family: 'Fredoka One', cursive;
+  font-size: 34px;
   color: white;
   text-decoration: underline;
   text-decoration-color: rgba(255,255,255, .5);
@@ -941,15 +942,18 @@ footer{
 
 }
 
+@media(max-width: 1156px){
+  .grid-image-wrapper{
+    grid-column: span 1;
+  }
+}
+
 @media(max-width: 1110px){
   .font-menu-sub-title{
     display: none;
   }
   .logo-small{
     margin-top: 20%;
-  }
-  .grid-image-wrapper{
-    grid-column: span 1;
   }
   .grid-image{
     margin-right: 5%;
