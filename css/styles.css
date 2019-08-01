@@ -981,6 +981,7 @@ footer{
   }
   .button-red-img-square{
     padding: 15px;
+    background: blue;
     font-size: 10px;
     margin-right: 5px;
   }
