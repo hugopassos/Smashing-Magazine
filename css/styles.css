@@ -844,7 +844,7 @@ footer{
 .community-links-container{
   display: grid;
   max-width: 2050px;
-  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  grid-template-columns: 50% 50%;
   margin: 0 auto;
   padding: 4%;
   margin-bottom: -100px;
@@ -1007,6 +1007,7 @@ footer{
   .font-menu-sub-title{
     display: none;
   }
+
   .logo-small{
     margin-top: 20%;
   }
@@ -1020,6 +1021,9 @@ footer{
 @media (max-width: 1025px){
   .img-cat-footer{
     display: none;
+  }
+  .community-links-container{
+    grid-template-columns: 100%;
   }
   .img-bird-footer{
     display: none;
