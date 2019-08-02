@@ -6,4 +6,4 @@ Used: CSS and HTML
 
 Authors: Hector Andoni Uzquiano https://github.com/Juakata and Hugo Passos https://github.com/hugopassos
 
-Follow this link to see the website: https://github.com/hugopassos/Smashing-Magazine/master/index.html
+Follow this link to see the website: https://raw.githack.com/hugopassos/Smashing-Magazine/master/index.html
