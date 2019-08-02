@@ -16,7 +16,7 @@ footer{
   background: linear-gradient(to bottom, #a3ff57 30%,#355917);
   border: none;
   color: white;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Baloo Bhaina', cursive;
   font-size: 25px;
   text-shadow: 1px 0 1px black;
 }
@@ -79,7 +79,7 @@ footer{
   border-radius: 7px;
   background: white;
   border: none;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Baloo Bhaina', cursive;
   color: #4287f5;
   font-size: 25px;
 }
@@ -95,7 +95,7 @@ footer{
 .h2-red-block{
   font-size: 45px;
   color: white;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Baloo Bhaina', cursive;
   text-decoration: underline;
   text-decoration-color: #9d9d9e;
   margin-bottom: 40px;
@@ -274,7 +274,7 @@ footer{
 }
 
 .font-menu-title{
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Baloo Bhaina', cursive;
   font-size: 2vw;
   font-weight: 100;
 }
@@ -297,7 +297,7 @@ footer{
 .nav-button{
   background: none;
   color: white;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Baloo Bhaina', cursive;
   height: 50px;
   width: 130px;
   border: solid 3px white;
@@ -328,7 +328,7 @@ footer{
   color: white;
   font-weight: 400;
   margin: 0 auto;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Baloo Bhaina', cursive;
   text-shadow: 1px 1px 0 black;
   margin-bottom: 50px;
 
@@ -568,7 +568,7 @@ footer{
 
 .grid-article-title{
   margin: 10px 30px;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Baloo Bhaina', cursive;
   font-size: calc(2em + .2vw);
   text-decoration: underline;
 }
@@ -581,7 +581,7 @@ footer{
   display: inline-block;
   margin-top: 20px;
   margin-left: 30px;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Baloo Bhaina', cursive;
   color: grey;
   font-size: calc(1.2em + .1vw);
 }
@@ -660,7 +660,7 @@ footer{
 .grid-image-text-h2 a{
   margin: 20px 0;
   display: inline-block;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Baloo Bhaina', cursive;
   font-size: 34px;
   color: white;
   text-decoration: underline;
@@ -708,7 +708,7 @@ footer{
 
 .guides-title{
   margin: 20px 30px;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Baloo Bhaina', cursive;
   font-size: calc(2em + .2vw);
 }
 
@@ -802,7 +802,7 @@ footer{
   outline: none;
   color: #4287f5;
   font-size: 22px;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Baloo Bhaina', cursive;
   border-left: 0.6px solid #c4c4c4;
 }
 .button-red-img-square:hover{
@@ -835,6 +835,31 @@ footer{
   flex-direction: row;
   background: #f5f2f2;
 }
+
+.community-links-container{
+  display: grid;
+  max-width: 2050px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  padding: 4%;
+}
+
+.community-link{
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+}
+
+.community-link-text{
+  
+}
+
+.community-link-snippet{
+  margin: 20px 30px;
+  font-size: calc(1.2em + .4vw);
+  line-height: calc(1.3em + .5vw);
+  font-family: Elena;
+}
+
 .img-user-week{
   border: 7px solid #d33a2c;
   border-radius: 20px;
