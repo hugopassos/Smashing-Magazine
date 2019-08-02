@@ -1197,8 +1197,8 @@ footer{
     background: white;
   }
   .input-red-img-square{
-      padding: 20px;
-      padding-right: 0;
+    padding: 20px;
+    padding-right: 0;
   }
   .grid-image{
     margin-left: 1%;
@@ -1206,6 +1206,26 @@ footer{
   }
   .community-link{
     flex-direction: column;
+    margin-top: 70px;
+  }
+  .info-person-week{
+    margin-bottom: 120px;
+  }
+  .img-user-div{
+    position: relative;
+  }
+  .img-user-extra{
+    position: absolute;
+    top: -90px;
+    left: 40px;
+  }
+  .community-link-text{
+    position: relative;
+  }
+  .by-author-community{
+    position: absolute;
+    left: 110px;
+    top: -100px;
   }
 }
 
