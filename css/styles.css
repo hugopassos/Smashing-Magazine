@@ -833,6 +833,7 @@ footer{
   padding: 80px;
   display: flex;
   flex-direction: row;
+  background: #f5f2f2;
 }
 .img-user-week{
   border: 7px solid #d33a2c;
@@ -840,6 +841,7 @@ footer{
   transform: rotate(-15deg);
   transition-duration: 0.3s;
   transform-origin: left bottom;
+  margin-left: 10%;
 }
 .img-user-week:hover{
   transform: rotate(0deg);
@@ -861,6 +863,16 @@ footer{
   margin-bottom: 24px;
   font-family: Elena;
   color: #666;
+}
+.a-person-week{
+  text-decoration: underline;
+  color: #4287f5;
+}
+.a-person-week:hover{
+  color: #4287f5;
+}
+.grid-image-whatever{
+  grid-column: span 4;
 }
 @media (min-width: 3380px){
   .articles{
@@ -903,7 +915,11 @@ footer{
     font-size: 2vh;
   }
 }
-
+@media(max-width:1537px){
+  .grid-image-whatever{
+    grid-column: span 2;
+  }
+}
 @media(max-width: 1400px){
   .nav-img{
     width: 4vh;
@@ -945,6 +961,9 @@ footer{
 @media(max-width: 1156px){
   .grid-image-wrapper{
     grid-column: span 1;
+  }
+  .grid-image-whatever{
+    grid-column: span 2;
   }
 }
 
@@ -1049,7 +1068,7 @@ footer{
     margin-bottom: 60px;
   }
   .img-user-week{
-    margin-left: 10%;
+    margin-left: 100px;
   }
   .h2-person-week{
     margin-top: 70px;
