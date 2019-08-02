@@ -832,11 +832,15 @@ footer{
   font-size: 16px;
   max-width: 400px;
 }
+
+.white-container{
+  background: white;
+}
+
 .container-person-week{
   padding: 80px;
   display: flex;
   flex-direction: row;
-  background: #f5f2f2;
   max-width: 2050px;
   margin: 0 auto;
 }
@@ -857,9 +861,6 @@ footer{
   margin-bottom: 100px;
 }
 
-.community-link-text{
-
-}
 .img-user-extra{
   border-color: #d33a2c;
 }
@@ -869,6 +870,12 @@ footer{
   font-size: calc(1.2em + .4vw);
   line-height: calc(1.3em + .5vw);
   font-family: Elena;
+}
+
+.community-link-snippet span{
+  color: grey;
+  font-size: calc(0.6em + .4vw);
+  line-height: calc(1.3em + .5vw);
 }
 
 .img-user-week{
