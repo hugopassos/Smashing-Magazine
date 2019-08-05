@@ -3,6 +3,24 @@ body{
   margin: 0;
   padding: 0;
 }
+#main-title{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30px;
+  margin: auto;
+  width: 150px;
+  height: 50px;
+  background: #616161;
+}
+.title{
+  width: 50%;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+.p{
+  height: 130px;
+}
 .main-a{
   text-decoration: none;
   color: black;
@@ -12,7 +30,16 @@ body{
   color: black;
   text-decoration: none;
 }
-
+.grid-2-col{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+}
+.grid-3-col{
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  position: relative;
+}
 .flex{
   display: flex;
   flex-direction: row;
@@ -37,7 +64,7 @@ body{
 .grey2{
   background: #616161;
 }
-
 .border{
   border: black 1px solid;
+  height: 500px;
 }
