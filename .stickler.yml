@@ -1,0 +1,19 @@
+linters:
+  csslint: {  }
+files:
+  ignore:
+    - 'bower_components/*'
+    
+
+linters:
+  # Configured linters
+        
+  phpcs:
+        standard: 'PSR2'
+        exclude: 'Generic.Files.LineLength,PSR2.Files.EndFileNewline'
+        ignore: 'tests/fixtures/generated/*'
+        extensions: 'php,ctp'
+        tab_width: 4
+        fixer: true
+fixers:
+    enable: true
