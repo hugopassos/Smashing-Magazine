@@ -58,7 +58,7 @@ footer{
 }
 
 #container-title{
-  width:365px;
+  max-width:365px;
   position: absolute;
   z-index: 1;
   left: 0;
@@ -71,7 +71,7 @@ footer{
   display: inline;
   line-height: 1.4em;
   background: white;
-  font-size: 30px;
+  font-size: 25px;
   padding: 10px;
   font-weight: bold;
 }
@@ -524,7 +524,6 @@ footer{
 }
 
 .grid-article{
-  background: #f5f2f2;
   padding-left: 2%;
   padding-right: 2%;
   padding-top: 1.5%;
@@ -558,10 +557,8 @@ footer{
 }
 .grid-article-article{
   display: flex;
-  flex: 1;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 364.5px;
   background: #f5f2f2;
   margin-top: 20px;
   padding: 20px 0;
@@ -656,6 +653,7 @@ footer{
 
 .grid-image-wrapper{
   display: grid;
+  max-width: 800px;
   grid-column: span 2;
   padding-top: 40px;
   padding-bottom: 20px;
@@ -1140,7 +1138,8 @@ footer{
     margin-bottom: 60px;
   }
   .img-user-week{
-    margin-left: 100px;
+    margin-left: 60px;
+    width: 150px;
   }
   .h2-person-week{
     margin-top: 70px;
@@ -1203,6 +1202,9 @@ footer{
     grid-column: span 1;
   }
 
+  .grid-article-article:hover{
+    transform: scale(1);
+  }
 }
 @media(max-width: 645px){
   .ul-footer{
@@ -1262,6 +1264,9 @@ footer{
   }
   .span-red-img-square{
     font-size: 10px;
+  }
+  #articles-title{
+    font-size: 20px;
   }
 }
 
